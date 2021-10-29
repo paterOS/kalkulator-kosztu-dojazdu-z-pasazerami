@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(255, 255, 255);
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1.2rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 1.2rem;
+}
+
+main {
+    background-image: url(./img/bg2.webp);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+
+
+.calc-of-travel {
+    position: relative;
+    padding: 32px;
+    grid-column-start: 2;
+    grid-column-end: 10;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    background-color: rgba(11, 19, 31, 0.8);
+    backdrop-filter: blur(30px);
+    border-radius: 10px;
+    width: 80vw;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 21px 56px rgba(0, 0, 0, 0.07), 0px 4.69062px 12.5083px rgba(0, 0, 0, 0.0417275);
+
+}
+.calc-form {
+    position: relative;
+    display: grid;
+    height: 75%;
+    grid-template-columns: 20% 11% 5%;
+    grid-template-rows: repeat(5 20%);
+    align-items: center;
+}
+
+.calc-form label {
+    text-align: end;
+}
+.calc-form span {
+    text-align: start;
+}
+
+.calc-form input {
+    color: black;
+    text-align: center;
+    justify-self: center;
+    width: 80%;
+    height: 60%;
+    border-style: none;
+    border-radius: 10px;
+    /* margin: 0 10px 15px 10px; */
+}
+
+.btns {
+    display: flex;
+    width: 35%;
+    justify-content:end;
+}
+
+.btn {
+    border-style: none;
+    border-radius: 10px;
+    width: 165px;
+    height: 51px;
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 0.06rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 10px;
+    transition: .5s;
+ 
+}
+
+.btn:hover {
+    transition: .3s;
+}
+.calc-btn {
+    background-color: #B42020;
+}
+
+.calc-btn:hover {
+    background-color: #a31616;
+    
+}
+
+.calc-btn:active, .reset-btn:active{
+    border-style: solid;
+    border-color: black;
+    border-bottom: 2px;
+    border-right: 2px;
+}
+
+.reset-btn {
+    background-color: #8B8B8B;
+}
+
+.reset-btn:hover {
+    background-color: #7c7c7c;
+}
+
+.resault {
+    content: '';
+    position: absolute;
+    top: 16%;
+    left: 50%;
+    width: 45%;
+}
+
+.resault p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+footer {
+    height: 15vh;
+    background-color: #0E3748;
+    padding: 35px;
+    text-align: center;
+    }
+
+    footer section {
+        height: 90%;
+    }
+    footer .copyr {
+        height: 10%;
+    }
